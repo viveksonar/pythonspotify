@@ -1,0 +1,7 @@
+client_id: '00dd29a62c884109a5a2962d7c7af74a'
+client_secret: 'e99b2ea6795944da82ce0f2a399e006d'
+access_token_url: 'https://accounts.spotify.com/api/token'
+auth_url: 'http://accounts.spotify.com/authorize'
+api_version: v1
+api_url: 'http://api.spotify.com'
+auth_method: 'AUTHORIZATION_CODE'
