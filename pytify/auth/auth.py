@@ -94,4 +94,7 @@ def _client_credentials(conf):
     return Authorization(access_token, token_type, expires_in, scope, None)
 
 def authenticate(conf):
-    return _client_credentials(conf)
+    if conf.auth_method == AuthMethod.CLIENT_CREDENTIALS:
+        return _client_credentials(conf)
+
+    return _authorization_code(conf)
